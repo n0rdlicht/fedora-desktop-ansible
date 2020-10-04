@@ -16,4 +16,5 @@
     # DNF apps
     - { role: sublime-merge, become: true}
     - { role: qgis, become: true}
+    - { role: gimp, become: true}
     - { role: vpn, become: true}
