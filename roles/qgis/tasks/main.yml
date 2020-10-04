@@ -1,5 +1,8 @@
 ---
 
+- name: Enable QGIS Repo
+  command: dnf copr enable -y dani/qgis
+
 - name: Install QGIS
   dnf:
     name: ['qgis','python3-qgis','qgis-grass','saga']
