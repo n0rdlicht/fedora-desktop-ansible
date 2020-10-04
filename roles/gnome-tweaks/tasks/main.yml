@@ -1,0 +1,6 @@
+---
+
+- name: Install GNOME Tweak Tool
+  dnf:
+    name: gnome-tweak-tool
+    state: present

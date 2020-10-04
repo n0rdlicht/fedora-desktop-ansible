@@ -17,4 +17,5 @@
     - { role: sublime-merge, become: true}
     - { role: qgis, become: true}
     - { role: gimp, become: true}
+    - { role: gnome-tweaks, become: true}
     - { role: vpn, become: true}
