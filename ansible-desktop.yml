@@ -7,6 +7,7 @@
     - { role: common, become: true}
     # Desktop roles
       # DNF apps
+    - { role: vpn, become: true}
     - { role: sublime-merge, become: true}
       # Flatpak Apps
     - { role: flatpak, become: true}

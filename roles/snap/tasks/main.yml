@@ -8,4 +8,7 @@
 
 
 - name: Link snaps to classic envirnment 
-  command: ln -s /var/lib/snapd/snap /snap
+  file: 
+    src: /var/lib/snapd/snap
+    dest: /snap
+    state: link

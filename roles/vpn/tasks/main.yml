@@ -1,0 +1,12 @@
+---
+
+- name: Add L2TP/IPSec support
+  dnf:
+    name: ['libreswan','xl2tpd','NetworkManager-l2tp','NetworkManager-l2tp-gnome']
+    state: present
+    update_cache: True
+
+- name: Restart NetworkManager
+  service:
+    name: NetworkManager
+    state: restarted
