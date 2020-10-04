@@ -5,6 +5,8 @@
   roles:
     # Common roles
     - { role: common, become: true}
+    - { role: geo, become: true}
+    - { role: node, become: true}
     # Desktop roles
       # Flatpak Apps
     - { role: flatpak, become: true}
@@ -14,8 +16,9 @@
     - { role: bitwarden, become: true}
     - { role: vscode, become: true}
     # DNF apps
+    - { role: wireshark, become: true}
     - { role: sublime-merge, become: true}
     - { role: qgis, become: true}
-    - { role: gimp, become: true}
+    - { role: graphic-tools, become: true}
     - { role: gnome-tweaks, become: true}
     - { role: vpn, become: true}

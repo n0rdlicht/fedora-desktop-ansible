@@ -1,0 +1,14 @@
+---
+
+- name: Install Geo utilities
+  dnf: 
+    # add: 'tilemill', 'gdal-bin', 'libspatialite-dev', 'spatialite-bin'
+    name: ['sqlite','python-matplotlib','python-gdal','spatialite-gui','sqliteman']
+    state: present
+    update_cache: True
+
+- name: Install global python packages
+  pip:
+    name: ['pandas', 'geopandas', 'scipy', 'shapely', 'django', 'pyshp', 'geopy', 'frictionless', 'pyproj', 'ipython', 'scikit-learn', 'ggplot']
+    executable: pip3
+    state: present

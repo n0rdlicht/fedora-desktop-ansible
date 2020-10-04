@@ -1,0 +1,7 @@
+---
+
+- name: Install Wireshark
+  dnf:
+    name: ['wireshark']
+    state: present
+    update_cache: True

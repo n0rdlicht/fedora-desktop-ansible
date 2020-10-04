@@ -2,6 +2,6 @@
 
 - name: Install common packages
   dnf: 
-    name: ['curl','diffutils','emacs','gawk','gcc','git','grep','gzip','htop','iftop','iotop','less','make','nano','nmap','openssl','pwgen','snapd','tar','tmux','unzip','vim','wget','whois','zip']
+    name: ['curl','cifs-utils','diffutils','emacs','gawk','gcc','git','grep','gzip','htop','iftop','iotop','less','make','nano','nmap','openssl','pwgen','snapd','tar','tmux','unzip','vim','wget','whois','zip']
     state: present
     update_cache: True

@@ -1,9 +1,9 @@
 
 ---
 
-- name: Install Gimp
+- name: Install Graphic Tools
   dnf:
-    name: gimp
+    name: ['gimp','inkscape']
     state: present
 
 - name: Add Gimp configs

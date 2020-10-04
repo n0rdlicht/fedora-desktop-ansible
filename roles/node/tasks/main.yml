@@ -1,0 +1,7 @@
+---
+
+- name: Install NodeJS
+  dnf:
+    name: ['nodejs']
+    state: present
+    update_cache: True
