@@ -1,0 +1,17 @@
+---
+
+- name: Fedora desktop environment playbook
+  hosts: localhost
+  roles:
+    # Common roles
+    - { role: common, become: true}
+    # Desktop roles
+      # DNF apps
+    - { role: sublime-merge, become: true}
+      # Flatpak Apps
+    - { role: flatpak, become: true}
+    - { role: remmina, become: false}
+      # Snapstore Apps
+    - { role: snap, become: true }
+    - { role: bitwarden, become: true}
+    - { role: vscode, become: true}

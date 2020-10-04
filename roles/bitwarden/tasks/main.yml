@@ -1,0 +1,5 @@
+---
+
+- name: Install Bitwarden Snap
+  snap:
+    name: bitwarden

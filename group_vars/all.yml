@@ -1,0 +1,5 @@
+---
+
+# http://docs.ansible.com/ansible/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable
+locale: "de_CH.UTF-8"
+timezone: "Europe/Zurich"

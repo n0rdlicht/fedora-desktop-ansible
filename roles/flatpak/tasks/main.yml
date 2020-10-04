@@ -1,0 +1,17 @@
+---
+
+- name: Enable Flatpack
+  flatpak_remote:
+    name: flathub
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+    method: system 
+    state: present
+
+- name: Add basic Flatpak modules 
+  flatpak:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - org.freedesktop.Platform/x86_64/19.08
+    - org.freedesktop.Platform.openh264/x86_64/19.08
+

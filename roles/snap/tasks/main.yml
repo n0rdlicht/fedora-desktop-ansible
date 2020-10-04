@@ -1,0 +1,11 @@
+---
+
+- name: Install snapd
+  dnf:
+    name: ['snapd']
+    state: present
+    update_cache: True
+
+
+- name: Link snaps to classic envirnment 
+  command: ln -s /var/lib/snapd/snap /snap
