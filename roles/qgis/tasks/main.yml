@@ -1,0 +1,7 @@
+---
+
+- name: Install QGIS
+  dnf:
+    name: ['qgis','python3-qgis','qgis-grass','saga']
+    state: present
+    update_cache: True

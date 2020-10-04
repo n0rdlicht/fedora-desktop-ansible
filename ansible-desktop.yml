@@ -6,9 +6,6 @@
     # Common roles
     - { role: common, become: true}
     # Desktop roles
-      # DNF apps
-    - { role: vpn, become: true}
-    - { role: sublime-merge, become: true}
       # Flatpak Apps
     - { role: flatpak, become: true}
     - { role: remmina, become: false}
@@ -16,3 +13,7 @@
     - { role: snap, become: true }
     - { role: bitwarden, become: true}
     - { role: vscode, become: true}
+    # DNF apps
+    - { role: sublime-merge, become: true}
+    - { role: qgis, become: true}
+    - { role: vpn, become: true}
