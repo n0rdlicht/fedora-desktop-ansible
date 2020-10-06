@@ -1,0 +1,9 @@
+---
+
+- name: Add GH CLI Repo
+  command: dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+
+- name: Install GH CLI
+  dnf:
+    name: ['gh']
+    state: present

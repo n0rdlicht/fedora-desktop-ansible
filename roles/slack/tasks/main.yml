@@ -1,0 +1,17 @@
+---
+
+- name: Download Slack RPM
+  get_url:
+    url: wget https://downloads.slack-edge.com/linux_releases/slack-4.9.1-0.1.fc21.x86_64.rpm
+    dest: /tmp/slack-4.9.1-0.1.fc21.x86_64.rpm
+    mode: "+x"
+
+- name: Install Slack
+  dnf:
+    name: /tmp/slack-4.9.1-0.1.fc21.x86_64.rpm
+    state: present
+
+- name: Remove Slack Download
+  file:
+    path: /tmp/slack-4.9.1-0.1.fc21.x86_64.rpm
+    state: absent

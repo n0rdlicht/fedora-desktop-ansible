@@ -9,6 +9,6 @@
 
 - name: Install global python packages
   pip:
-    name: ['pandas', 'geopandas', 'scipy', 'shapely', 'django', 'pyshp', 'geopy', 'frictionless', 'pyproj', 'ipython', 'scikit-learn', 'ggplot']
+    name: ['geopandas', 'shapely', 'pyshp', 'geopy', 'pyproj', 'scikit-learn']
     executable: pip3
     state: present

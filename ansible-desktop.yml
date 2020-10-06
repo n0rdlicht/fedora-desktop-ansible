@@ -3,8 +3,9 @@
 - name: Fedora desktop environment playbook
   hosts: localhost
   roles:
-    # Common roles
+    # Common roles, Python packages
     - { role: common, become: true}
+    - { role: python, become: true}
     - { role: geo, become: true}
     - { role: node, become: true}
     # Desktop roles
@@ -17,6 +18,8 @@
     - { role: vscode, become: true}
     # DNF apps
     - { role: wireshark, become: true}
+    - { role: slack, become: true}
+    - { role: gh-cli, become: true}
     - { role: sublime-merge, become: true}
     - { role: qgis, become: true}
     - { role: graphic-tools, become: true}

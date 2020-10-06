@@ -1,0 +1,7 @@
+---
+
+- name: Install global python packages
+  pip:
+    name: ['pandas', 'scipy', 'django', 'frictionless', 'podman-compose', 'scikit-learn', 'ggplot']
+    executable: pip3
+    state: present
